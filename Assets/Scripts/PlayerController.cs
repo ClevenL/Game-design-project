@@ -33,7 +33,5 @@ public class PlayerController : MonoBehaviour {
 		a.SetBool("PlayerMoving",playerMoving);
 		a.SetFloat("LastMoveX",lastMove.x);
 		a.SetFloat("LastMoveY",lastMove.y);
-
-		Debug.Log(playerMoving);
 	}
 }
