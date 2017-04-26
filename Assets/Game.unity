@@ -157,7 +157,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '#ultracool_game'
+  m_Text: "Vahva m\xE4ng"
 --- !u!222 &280827292
 CanvasRenderer:
   m_ObjectHideFlags: 0
