@@ -5,7 +5,7 @@ using UnityEngine;
 public class ChangeAlpha : MonoBehaviour {
 	float Transparency = 1f;
 	public GameObject[] Item;
-	string OrderInLayer = "Walls";
+	string SortingLayer = "Walls";
 	int i;
 
 	// Use this for initialization
@@ -18,12 +18,12 @@ public class ChangeAlpha : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.name == "Player") {
 			Transparency = .6f;
-			OrderInLayer = "TransparentWalls";
+			SortingLayer = "TransparentWalls";
 		}
 		for (i = 0; i < Item.Length; i++) {
 			
 			Item [i].GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, Transparency);
-			Item [i].GetComponent<SpriteRenderer> ().sortingLayerName = OrderInLayer;
+			Item [i].GetComponent<SpriteRenderer> ().sortingLayerName = SortingLayer;
 
 		}
 	}
@@ -31,12 +31,12 @@ public class ChangeAlpha : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D other) {
 		if (other.gameObject.name == "Player") {
 			Transparency = 1f;
-			OrderInLayer = "Walls";
+			SortingLayer = "Walls";
 		}
 		for (i = 0; i < Item.Length; i++) {
 
 			Item [i].GetComponent<SpriteRenderer> ().color = new Color (1, 1, 1, Transparency);
-			Item [i].GetComponent<SpriteRenderer> ().sortingLayerName = OrderInLayer;
+			Item [i].GetComponent<SpriteRenderer> ().sortingLayerName = SortingLayer;
 
 		}
 	}

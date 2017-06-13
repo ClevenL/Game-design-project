@@ -6,8 +6,10 @@ public class dialogHolder : MonoBehaviour {
 
 	public string dialogue;
 	private DialogueManager dMan;
-
+	public float distance;
 	public string[] dialogueLines;
+	public GameObject NPC;
+	public GameObject Player;
 
 	// Use this for initialization
 	void Start () {
@@ -16,14 +18,10 @@ public class dialogHolder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+		distance = Vector3.Distance(Player.transform.position, NPC.transform.position);
+		if (distance <= 0.6) {
 
-	void OnTriggerStay2D(Collider2D other)
-	{
-		if (other.gameObject.name == "Player") 
-		{
-			if (Input.GetKeyUp (KeyCode.Space)) 
+			if (Input.GetKeyUp (KeyCode.E)) 
 			{
 				//dMan.ShowBox (dialogue);
 
@@ -34,6 +32,8 @@ public class dialogHolder : MonoBehaviour {
 					dMan.ShowDialogue();
 				}
 			}
+		
+
 		}
 	}
 }
