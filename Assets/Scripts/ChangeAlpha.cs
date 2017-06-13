@@ -17,7 +17,7 @@ public class ChangeAlpha : MonoBehaviour {
 	//Seina taha minnes
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.name == "Player") {
-			Transparency = .2f;
+			Transparency = .6f;
 			OrderInLayer = "TransparentWalls";
 		}
 		for (i = 0; i < Item.Length; i++) {
