@@ -1,11 +1,13 @@
-﻿#pragma strict
+﻿import UnityEngine.SceneManagement;
 
-var level : String;
+#pragma strict
+
+var scene : String;
 
 function OnTriggerEnter2D(Col: Collider2D)
 {
 	if(Col.CompareTag("Player"))
 	{
-		Application.LoadLevel(level);
+		SceneManager.LoadScene(scene);
 	}
 }
