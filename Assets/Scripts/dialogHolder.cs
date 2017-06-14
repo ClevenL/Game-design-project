@@ -6,7 +6,7 @@ public class dialogHolder : MonoBehaviour {
 
 	public string dialogue;
 	private DialogueManager dMan;
-	private QuestTrigger qTrig;
+	//private QuestTrigger qTrig;
 	private QuestManager theQM;
 	public float distance;
 	public string[] dialogueLines;
@@ -16,7 +16,7 @@ public class dialogHolder : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		dMan = FindObjectOfType<DialogueManager>();
-		qTrig = FindObjectOfType<QuestTrigger> ();
+		//qTrig = FindObjectOfType<QuestTrigger> ();
 		theQM = FindObjectOfType<QuestManager> ();
 	}
 	
@@ -31,15 +31,41 @@ public class dialogHolder : MonoBehaviour {
 				//dMan.ShowBox (dialogue);
 
 				if (!dMan.dialogActive) {
-					if (Player.name == "Player" && NPC.name == "norm_ak_ruuduline") {
+					Debug.Log ("siin1");
+					if (Player.name == "Player" && NPC.name == "Normak" && theQM.questCompleted [2] == false &&
+					    theQM.questCompleted [0] == true) {
+
+
+						Debug.Log ("siin2");
 						//theQM.quests [2].EndQuest ();
 						//theQM.ShowQuestText (endText);
 						theQM.questCompleted [2] = true;
-						theQM.quests[2].gameObject.SetActive (false);
+						theQM.quests [2].gameObject.SetActive (false);
+
+
+						dMan.dialogLines = dialogueLines;
+						dMan.currentLine = 0;
+						dMan.ShowDialogue ();
+
+					} else if (Player.name == "Player" && NPC.name == "Romil" && theQM.questCompleted [0] == false) {
+						//theQM.quests [2].EndQuest ();
+						//theQM.ShowQuestText (endText);
+						theQM.questCompleted [0] = true;
+						theQM.quests [0].gameObject.SetActive (false);
+						theQM.quests [2].gameObject.SetActive (true);
+
+
+						dMan.dialogLines = dialogueLines;
+						dMan.currentLine = 0;
+						dMan.ShowDialogue ();
+
+					} else if (theQM.questCompleted [1] == false && theQM.questCompleted [2] == false) {
+						theQM.ShowQuestText ("Mul ei ole sulle midagi õelda.");
+					} else {
+
+						theQM.ShowQuestText ("Mul ei ole sulle midagi õelda.");
 					}
-					dMan.dialogLines = dialogueLines;
-					dMan.currentLine = 0;
-					dMan.ShowDialogue ();
+
 				}
 			}
 		
