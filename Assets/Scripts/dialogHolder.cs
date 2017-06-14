@@ -6,6 +6,8 @@ public class dialogHolder : MonoBehaviour {
 
 	public string dialogue;
 	private DialogueManager dMan;
+	//private QuestTrigger qTrig;
+	private QuestManager theQM;
 	public float distance;
 	public string[] dialogueLines;
 	public GameObject NPC;
@@ -14,6 +16,8 @@ public class dialogHolder : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		dMan = FindObjectOfType<DialogueManager>();
+		//qTrig = FindObjectOfType<QuestTrigger> ();
+		theQM = FindObjectOfType<QuestManager> ();
 	}
 	
 	// Update is called once per frame
@@ -21,15 +25,27 @@ public class dialogHolder : MonoBehaviour {
 		distance = Vector3.Distance(Player.transform.position, NPC.transform.position);
 		if (distance <= 0.6) {
 
-			if (Input.GetKeyUp (KeyCode.E)) 
-			{
+
+
+			if (Input.GetKeyUp (KeyCode.E)) {
 				//dMan.ShowBox (dialogue);
 
-				if (!dMan.dialogActive) 
-				{
-					dMan.dialogLines = dialogueLines;
-					dMan.currentLine = 0;
-					dMan.ShowDialogue();
+				if (!dMan.dialogActive) {
+					
+					if (Player.name == "Player" && NPC.name == "norm_ak_ruuduline" && theQM.questCompleted [0] == true) {
+						//theQM.quests [2].EndQuest ();
+						//theQM.ShowQuestText (endText);
+						theQM.questCompleted [2] = true;
+						theQM.quests [2].gameObject.SetActive (false);
+
+
+						dMan.dialogLines = dialogueLines;
+						dMan.currentLine = 0;
+						dMan.ShowDialogue ();
+					} else {
+						theQM.ShowQuestText ("Mul ei ole sulle midagi õelda.");
+					}
+
 				}
 			}
 		

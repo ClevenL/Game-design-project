@@ -36,7 +36,7 @@ public class QuestTrigger : MonoBehaviour {
 				}
 
 			if (endQuest && theQM.quests [questNumber].gameObject.activeSelf) {
-					theQM.quests [questNumber].EndQuest ();
+					//theQM.quests [questNumber].EndQuest ();
 				}
 
 
