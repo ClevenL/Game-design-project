@@ -4,7 +4,7 @@ README.md fail peab sisaldama järgmist:
 ## Welcome to DTI!
 
 # Screenshot
-![alt text](http://imgur.com/a/I12lH)
+![alt text](http://i.imgur.com/75ocTrv.gif)
 
 # Eesmärk
 Mängu eesmärk on lahendada TLÜ Astra maja 4. korrusel DTI õppejõudude poolt antavaid ülesandeid ja teenida ainepunkte (EAP). Lõppeesmärk on lõpetada semester, ehk teenida 30EAP.
