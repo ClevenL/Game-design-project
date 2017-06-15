@@ -19,7 +19,7 @@ viidet litsentsile.
 
 ## Welcome to DTI!
 
-![alt text](screenshot.gif)
+![alt text](http://imgur.com/a/I12lH)
 
 # Eesmärk
 Mängu eesmärk on lahendada TLÜ Astra maja 4. korrusel DTI õppejõudude poolt antavaid ülesandeid ja teenida ainepunkte (EAP). 
