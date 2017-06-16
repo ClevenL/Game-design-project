@@ -24314,7 +24314,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da3cdd1acf3fb34d9ef128a9591b646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPC: {fileID: 957634757}
 --- !u!70 &957634763
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -29826,7 +29825,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da3cdd1acf3fb34d9ef128a9591b646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPC: {fileID: 1191086008}
 --- !u!61 &1191086011
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40995,6 +40993,7 @@ GameObject:
   - component: {fileID: 1648119901}
   - component: {fileID: 1648119903}
   - component: {fileID: 1648119902}
+  - component: {fileID: 1648119904}
   m_Layer: 5
   m_Name: ScoreText
   m_TagString: Untagged
@@ -41017,7 +41016,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -709, y: 299}
+  m_AnchoredPosition: {x: -652.4, y: 299}
   m_SizeDelta: {x: 104, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1648119902
@@ -41059,6 +41058,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1648119900}
+--- !u!114 &1648119904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1648119900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5662fd6a7a018ab4ea529245b1b5c4e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1651700909
 GameObject:
   m_ObjectHideFlags: 0
