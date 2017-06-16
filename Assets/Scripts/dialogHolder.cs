@@ -31,12 +31,12 @@ public class dialogHolder : MonoBehaviour {
 				//dMan.ShowBox (dialogue);
 
 				if (!dMan.dialogActive) {
-					Debug.Log ("siin1");
+					//Debug.Log ("siin1");
 					if (Player.name == "Player" && NPC.name == "Normak" && theQM.questCompleted [2] == false &&
 					    theQM.questCompleted [0] == true) {
 
 
-						Debug.Log ("siin2");
+						//Debug.Log ("siin2");
 						//theQM.quests [2].EndQuest ();
 						//theQM.ShowQuestText (endText);
 						theQM.questCompleted [2] = true;
