@@ -27,6 +27,7 @@ public class dialogHolder : MonoBehaviour {
 
 
 
+
 			if (Input.GetKeyUp (KeyCode.E)) {
 				//dMan.ShowBox (dialogue);
 
@@ -50,7 +51,7 @@ public class dialogHolder : MonoBehaviour {
 					} else if (Player.name == "Player" && NPC.name == "Romil" && theQM.questCompleted [0] == false) {
 						//theQM.quests [2].EndQuest ();
 						//theQM.ShowQuestText (endText);
-						qTrig.gameObject.SetActive(false);
+						qTrig.gameObject.SetActive (false);
 						theQM.questCompleted [0] = true;
 						theQM.quests [0].gameObject.SetActive (false);
 						theQM.quests [2].gameObject.SetActive (true);
@@ -71,6 +72,9 @@ public class dialogHolder : MonoBehaviour {
 			}
 		
 
+		} else {
+			NPC.GetComponentInChildren<Renderer> (false);
+			//NPC.GetComponent<SpriteRenderer> ().gameObject.SetActive (true);
 		}
 	}
 }
