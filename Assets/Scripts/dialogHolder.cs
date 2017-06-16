@@ -40,7 +40,9 @@ public class dialogHolder : MonoBehaviour {
 						//theQM.quests [2].EndQuest ();
 						//theQM.ShowQuestText (endText);
 						theQM.questCompleted [2] = true;
+						ScoreScript.scoreValue += 4;
 						theQM.quests [2].gameObject.SetActive (false);
+
 
 
 						dMan.dialogLines = dialogueLines;
@@ -53,7 +55,9 @@ public class dialogHolder : MonoBehaviour {
 						qTrig.gameObject.SetActive(false);
 						theQM.questCompleted [0] = true;
 						theQM.quests [0].gameObject.SetActive (false);
+						ScoreScript.scoreValue += 4;
 						theQM.quests [2].gameObject.SetActive (true);
+
 
 
 						dMan.dialogLines = dialogueLines;
