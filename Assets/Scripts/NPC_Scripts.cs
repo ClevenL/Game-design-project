@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPCscripts : MonoBehaviour {
+public class NPC_Scripts : MonoBehaviour {
 
 	public GameObject NPC;
+	//spublic Sprite Sprite;
 	//string OrderInLayer = "Walls";
 	/*
 	public float Distance;
@@ -14,9 +15,9 @@ public class NPCscripts : MonoBehaviour {
 	*/
 	// Use this for initialization
 	void Start () {
-
+		
 		/*
-		Distance = Vector3.Distance (transform.position, target.position);
+
 		if (Distance < Range) {
 			talk = true;
 		}
@@ -26,7 +27,7 @@ public class NPCscripts : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		//Distance = Vector3.Distance (transform.position, target.position);
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
