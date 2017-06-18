@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MinigameTimer : MonoBehaviour {
 
+
+
 	public string name;
-	public float timeLeft; 
+	public float timeLeft;
+	public float spawnTime = 1f;
 	public bool start = false;
 	private DialogueManager dMan;
 
@@ -32,6 +35,7 @@ public class MinigameTimer : MonoBehaviour {
 		
 		if (start == true) {
 			timeLeft -= Time.deltaTime;
+
 			if (timeLeft <= 0.0f && skipper == 2) {
 				start = false;
 				//dMan.dBox.SetActive(false);
