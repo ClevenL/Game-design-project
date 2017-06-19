@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class dialogHolder : MonoBehaviour {
 
@@ -45,10 +46,10 @@ public class dialogHolder : MonoBehaviour {
 						theQM.quests [2].gameObject.SetActive (false);
 
 
-
 						dMan.dialogLines = dialogueLines;
 						dMan.currentLine = 0;
 						dMan.ShowDialogue ();
+						SceneManager.LoadScene ("Minigame2");
 
 					} else if (Player.name == "Player" && NPC.name == "Romil" && theQM.questCompleted [0] == false) {
 						//theQM.quests [2].EndQuest ();
@@ -56,8 +57,8 @@ public class dialogHolder : MonoBehaviour {
 						qTrig.gameObject.SetActive (false);
 						theQM.questCompleted [0] = true;
 						theQM.quests [0].gameObject.SetActive (false);
-						ScoreScript.scoreValue += 4;
 						theQM.quests [2].gameObject.SetActive (true);
+						ScoreScript.scoreValue += 6;
 
 
 
@@ -71,6 +72,7 @@ public class dialogHolder : MonoBehaviour {
 
 						theQM.ShowQuestText ("Mul ei ole sulle midagi öelda.");
 					}
+						
 
 				}
 			}
