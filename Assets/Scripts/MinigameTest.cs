@@ -19,4 +19,10 @@ public class MinigameTest : MonoBehaviour {
 			transform.Translate(0, Time.deltaTime*(-2.5f), 0, Camera.main.transform);
 		}
     }
+    void OnTriggerEnter(Collider collider){
+	    if(collider.gameObject.tag == "Player")
+	    {
+			Debug.Log("got hit!");
+	    }
+	}
 }
