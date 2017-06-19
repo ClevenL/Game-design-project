@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MinigameTimer : MonoBehaviour {
 
+	public GameObject syringe;
+	GameObject syringeClone;
 
 
 	public string name;
-	public float timeLeft;
-	public float spawnTime = 1f;
+	public float timeLeft = 30f;
+	public float spawnTime = 0.2f;
 	public bool start = false;
 	private DialogueManager dMan;
 
@@ -35,6 +37,17 @@ public class MinigameTimer : MonoBehaviour {
 		
 		if (start == true) {
 			timeLeft -= Time.deltaTime;
+			spawnTime -= Time.deltaTime;
+
+			if (spawnTime <= 0.0f) {
+				transform.position = new Vector3(Random.Range(-2.6f, 2.6f), 4f);
+				transform.rotation = Quaternion.Euler(0, 0, -90);
+				syringeClone = Instantiate(syringe, transform.position, transform.rotation) as GameObject;
+				spawnTime = 0.2f;
+			}
+
+
+
 
 			if (timeLeft <= 0.0f && skipper == 2) {
 				start = false;
@@ -54,7 +67,7 @@ public class MinigameTimer : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 
 
-		if (other.gameObject.name == "Player" && timeLeft ==5.0f && skipper == 1) {
+		if (other.gameObject.name == "Player" && timeLeft ==30.0f && skipper == 1) {
 			dMan.dialogLines = dialogueLines2;
 			dMan.currentLine = 0;
 			dMan.ShowDialogue ();
