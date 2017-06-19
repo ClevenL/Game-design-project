@@ -281,6 +281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 17451502}
   - component: {fileID: 17451501}
+  - component: {fileID: 17451503}
   m_Layer: 0
   m_Name: desk_side_clear (15)
   m_TagString: Untagged
@@ -341,6 +342,31 @@ Transform:
   m_Father: {fileID: 929853208}
   m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &17451503
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 17451500}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &24066539
 GameObject:
   m_ObjectHideFlags: 0
@@ -12421,6 +12447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 455368567}
   - component: {fileID: 455368566}
+  - component: {fileID: 455368568}
   m_Layer: 0
   m_Name: desk_side_paper (1)
   m_TagString: Untagged
@@ -12481,6 +12508,31 @@ Transform:
   m_Father: {fileID: 1959238231}
   m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &455368568
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 455368565}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &457302336
 GameObject:
   m_ObjectHideFlags: 0
@@ -15109,6 +15161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 558213389}
   - component: {fileID: 558213388}
+  - component: {fileID: 558213390}
   m_Layer: 0
   m_Name: desk_side_clear (13)
   m_TagString: Untagged
@@ -15169,6 +15222,31 @@ Transform:
   m_Father: {fileID: 929853208}
   m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &558213390
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 558213387}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &571042742
 GameObject:
   m_ObjectHideFlags: 0
@@ -15247,6 +15325,7 @@ GameObject:
   m_Component:
   - component: {fileID: 572096130}
   - component: {fileID: 572096129}
+  - component: {fileID: 572096131}
   m_Layer: 0
   m_Name: desk_side_paper (12)
   m_TagString: Untagged
@@ -15307,6 +15386,31 @@ Transform:
   m_Father: {fileID: 929853208}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &572096131
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572096128}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &575712824
 GameObject:
   m_ObjectHideFlags: 0
@@ -15316,6 +15420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 575712826}
   - component: {fileID: 575712825}
+  - component: {fileID: 575712827}
   m_Layer: 0
   m_Name: flower (3)
   m_TagString: Untagged
@@ -15376,6 +15481,31 @@ Transform:
   m_Father: {fileID: 929853208}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &575712827
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 575712824}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.25, y: 0.5}
+    newSize: {x: 0.25, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1 &577658306
 GameObject:
   m_ObjectHideFlags: 0
@@ -16205,6 +16335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 618116481}
   - component: {fileID: 618116480}
+  - component: {fileID: 618116482}
   m_Layer: 0
   m_Name: desk_side_paper (3)
   m_TagString: Untagged
@@ -16265,6 +16396,31 @@ Transform:
   m_Father: {fileID: 1959238231}
   m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &618116482
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 618116479}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &622420001
 GameObject:
   m_ObjectHideFlags: 0
@@ -16412,6 +16568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 625754707}
   - component: {fileID: 625754706}
+  - component: {fileID: 625754708}
   m_Layer: 0
   m_Name: desk_side_paper (8)
   m_TagString: Untagged
@@ -16472,6 +16629,31 @@ Transform:
   m_Father: {fileID: 929853208}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &625754708
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 625754705}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &627004112
 GameObject:
   m_ObjectHideFlags: 0
@@ -22571,6 +22753,7 @@ GameObject:
   m_Component:
   - component: {fileID: 925232500}
   - component: {fileID: 925232499}
+  - component: {fileID: 925232501}
   m_Layer: 0
   m_Name: desk_side_paper (10)
   m_TagString: Untagged
@@ -22631,6 +22814,31 @@ Transform:
   m_Father: {fileID: 929853208}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &925232501
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 925232498}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &925301528
 GameObject:
   m_ObjectHideFlags: 0
@@ -22796,6 +23004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 931254722}
   - component: {fileID: 931254721}
+  - component: {fileID: 931254723}
   m_Layer: 0
   m_Name: desk_side_paper (6)
   m_TagString: Untagged
@@ -22856,6 +23065,31 @@ Transform:
   m_Father: {fileID: 1959238231}
   m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &931254723
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931254720}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &953964259
 GameObject:
   m_ObjectHideFlags: 0
@@ -24037,6 +24271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1000605550}
   - component: {fileID: 1000605549}
+  - component: {fileID: 1000605551}
   m_Layer: 0
   m_Name: desk_side_clear (14)
   m_TagString: Untagged
@@ -24097,6 +24332,31 @@ Transform:
   m_Father: {fileID: 929853208}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1000605551
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1000605548}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &1009181860
 GameObject:
   m_ObjectHideFlags: 0
@@ -24503,6 +24763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1033533167}
   - component: {fileID: 1033533166}
+  - component: {fileID: 1033533168}
   m_Layer: 0
   m_Name: desk_side_clear (12)
   m_TagString: Untagged
@@ -24563,6 +24824,31 @@ Transform:
   m_Father: {fileID: 929853208}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1033533168
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1033533165}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &1034662246
 GameObject:
   m_ObjectHideFlags: 0
@@ -27991,6 +28277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1189868398}
   - component: {fileID: 1189868397}
+  - component: {fileID: 1189868399}
   m_Layer: 0
   m_Name: desk_side_paper (5)
   m_TagString: Untagged
@@ -28051,6 +28338,31 @@ Transform:
   m_Father: {fileID: 1959238231}
   m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1189868399
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1189868396}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &1190224221
 GameObject:
   m_ObjectHideFlags: 0
@@ -32232,6 +32544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1386255336}
   - component: {fileID: 1386255335}
+  - component: {fileID: 1386255337}
   m_Layer: 0
   m_Name: desk_side_paper (9)
   m_TagString: Untagged
@@ -32292,6 +32605,31 @@ Transform:
   m_Father: {fileID: 929853208}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1386255337
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386255334}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &1387087979
 GameObject:
   m_ObjectHideFlags: 0
@@ -33607,6 +33945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1425728705}
   - component: {fileID: 1425728704}
+  - component: {fileID: 1425728706}
   m_Layer: 0
   m_Name: desk_side_paper (15)
   m_TagString: Untagged
@@ -33667,6 +34006,31 @@ Transform:
   m_Father: {fileID: 929853208}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1425728706
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1425728703}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &1426896654
 GameObject:
   m_ObjectHideFlags: 0
@@ -34095,6 +34459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1440063082}
   - component: {fileID: 1440063081}
+  - component: {fileID: 1440063083}
   m_Layer: 0
   m_Name: desk_side_paper (14)
   m_TagString: Untagged
@@ -34155,6 +34520,31 @@ Transform:
   m_Father: {fileID: 929853208}
   m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1440063083
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1440063080}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &1442480948
 GameObject:
   m_ObjectHideFlags: 0
@@ -36455,6 +36845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1539736183}
   - component: {fileID: 1539736182}
+  - component: {fileID: 1539736184}
   m_Layer: 0
   m_Name: desk_side_paper (11)
   m_TagString: Untagged
@@ -36515,6 +36906,31 @@ Transform:
   m_Father: {fileID: 929853208}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1539736184
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1539736181}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &1544107949
 GameObject:
   m_ObjectHideFlags: 0
@@ -39188,6 +39604,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1667684476}
   - component: {fileID: 1667684475}
+  - component: {fileID: 1667684477}
   m_Layer: 0
   m_Name: flower (5)
   m_TagString: Untagged
@@ -39248,6 +39665,31 @@ Transform:
   m_Father: {fileID: 929853208}
   m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1667684477
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1667684474}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.25, y: 0.5}
+    newSize: {x: 0.25, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1 &1668533092
 GameObject:
   m_ObjectHideFlags: 0
@@ -44294,6 +44736,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1918098310}
   - component: {fileID: 1918098309}
+  - component: {fileID: 1918098311}
   m_Layer: 0
   m_Name: desk_side_paper (13)
   m_TagString: Untagged
@@ -44354,6 +44797,31 @@ Transform:
   m_Father: {fileID: 929853208}
   m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1918098311
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1918098308}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &1926547343
 GameObject:
   m_ObjectHideFlags: 0
@@ -45870,6 +46338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1985932824}
   - component: {fileID: 1985932823}
+  - component: {fileID: 1985932825}
   m_Layer: 0
   m_Name: flower (4)
   m_TagString: Untagged
@@ -45930,6 +46399,31 @@ Transform:
   m_Father: {fileID: 929853208}
   m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1985932825
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1985932822}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.25, y: 0.5}
+    newSize: {x: 0.25, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1 &1985960214
 GameObject:
   m_ObjectHideFlags: 0
@@ -49783,6 +50277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2136815010}
   - component: {fileID: 2136815009}
+  - component: {fileID: 2136815011}
   m_Layer: 0
   m_Name: desk_side_paper (4)
   m_TagString: Untagged
@@ -49843,6 +50338,31 @@ Transform:
   m_Father: {fileID: 1959238231}
   m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2136815011
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136815008}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.40625, y: 0.9375}
+    newSize: {x: 0.40625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &2137875140
 GameObject:
   m_ObjectHideFlags: 0
