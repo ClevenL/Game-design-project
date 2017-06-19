@@ -71,6 +71,7 @@ public class dialogHolder : MonoBehaviour {
 
 						theQM.ShowQuestText ("Mul ei ole sulle midagi öelda.");
 					}
+						
 
 				}
 			}
