@@ -28466,9 +28466,9 @@ MonoBehaviour:
   dialogue: Text
   distance: 0
   dialogueLines:
-  - Mina olen Romil
-  - "R\xE4\xE4gi midagi huvitavat."
-  - Mine vaata mis Peeter sellest arvab.
+  - "Tere, v\xE4rske tudeng! Mina olen Romil"
+  - "V\xF5tan Sind vastu Tallinna \xDClikooli."
+  - "Mine otsi \xFClesse \xF5ppej\xF5ud Peeter Normak."
   NPC: {fileID: 1191086008}
   Player: {fileID: 154149029}
 --- !u!114 &1191086010
