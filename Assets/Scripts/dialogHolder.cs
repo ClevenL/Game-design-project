@@ -13,6 +13,7 @@ public class dialogHolder : MonoBehaviour {
 	public string[] dialogueLines;
 	public GameObject NPC;
 	public GameObject Player;
+	private int skipper = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -26,6 +27,10 @@ public class dialogHolder : MonoBehaviour {
 		distance = Vector3.Distance(Player.transform.position, NPC.transform.position);
 		if (distance <= 0.6) {
 
+			if (!dMan.dialogActive && Player.name == "Player" && NPC.name == "Normak" &&
+				theQM.questCompleted [2] == true && skipper == 2) {
+				SceneManager.LoadScene ("Minigame2");
+			}
 
 
 
@@ -38,18 +43,21 @@ public class dialogHolder : MonoBehaviour {
 					    theQM.questCompleted [0] == true) {
 
 
+						dMan.dialogLines = dialogueLines;
+						dMan.currentLine = 0;
+						dMan.ShowDialogue ();
+
 						//Debug.Log ("siin2");
 						//theQM.quests [2].EndQuest ();
 						//theQM.ShowQuestText (endText);
 						theQM.questCompleted [2] = true;
 						ScoreScript.scoreValue += 4;
 						theQM.quests [2].gameObject.SetActive (false);
+						skipper = skipper + 1;
 
 
-						dMan.dialogLines = dialogueLines;
-						dMan.currentLine = 0;
-						dMan.ShowDialogue ();
-						SceneManager.LoadScene ("Minigame2");
+
+
 
 					} else if (Player.name == "Player" && NPC.name == "Romil" && theQM.questCompleted [0] == false) {
 						//theQM.quests [2].EndQuest ();
@@ -75,6 +83,8 @@ public class dialogHolder : MonoBehaviour {
 						
 
 				}
+
+
 			}
 		
 
