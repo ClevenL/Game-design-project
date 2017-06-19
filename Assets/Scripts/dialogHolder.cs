@@ -66,10 +66,10 @@ public class dialogHolder : MonoBehaviour {
 						dMan.ShowDialogue ();
 
 					} else if (theQM.questCompleted [1] == false && theQM.questCompleted [2] == false) {
-						theQM.ShowQuestText ("Mul ei ole sulle midagi õelda.");
+						theQM.ShowQuestText ("Mul ei ole sulle midagi öelda.");
 					} else {
 
-						theQM.ShowQuestText ("Mul ei ole sulle midagi õelda.");
+						theQM.ShowQuestText ("Mul ei ole sulle midagi öelda.");
 					}
 
 				}
