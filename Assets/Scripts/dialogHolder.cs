@@ -47,7 +47,7 @@ public class dialogHolder : MonoBehaviour {
 			}
 		}
 
-			if (ProgressSave.skipper == 8){
+		if (ProgressSave.skipper == 8){
 			theQM.quests [3].gameObject.SetActive (true);
 			if(RightAnswer.answer){
 				theQM.ShowQuestText ("Tubli! Sa teenisid 25 EAP. Sa oled valmis Peeter Normaku Teoreetiliseks informaatikaks!");
@@ -68,6 +68,48 @@ public class dialogHolder : MonoBehaviour {
 
 		}
 
+		if (ProgressSave.skipper == 15){
+			theQM.quests [3].gameObject.SetActive (true);
+			if(RightAnswer.answer){
+				theQM.ShowQuestText ("Tubli! Sa teenisid 25 EAP. Sa oled valmis lõpetama!");
+				ScoreScript.scoreValue += 25;
+				theQM.quests [3].gameObject.SetActive (false);
+				theQM.questCompleted [3] = true;
+				ProgressSave.questProgress [3] = true;
+				RightAnswer.answer = false;
+				ProgressSave.skipper++;
+
+			}else{
+				theQM.ShowQuestText ("Sa ei vastanud õigesti ja kukkusid aine läbi. See aasta ma küll vist ei lõpeta...");
+				theQM.quests [3].gameObject.SetActive (false);
+				theQM.questCompleted [3] = true;
+				ProgressSave.questProgress [3] = true;
+				ProgressSave.skipper++;
+			}
+
+		}
+
+		if (ProgressSave.skipper == 11){
+			theQM.quests [3].gameObject.SetActive (true);
+			theQM.ShowQuestText ("Loodetavasti see pidu ei mõjunud mu tulemustele kuidagi halvasti... Mis ma tegema nüüd pidingi? Ahjaa... Teoreetilise informaatika eksam. God help me.");
+			theQM.quests [3].gameObject.SetActive (false);
+			theQM.questCompleted [3] = true;
+			ProgressSave.questProgress [3] = true;
+			ProgressSave.skipper++;
+		}
+
+		if (ProgressSave.skipper == 16){
+
+			ProgressSave.skipper = 1;
+			ProgressSave.questProgress = null;
+			ScoreScript.scoreValue = 0;
+			if (ScoreScript.scoreValue >= 60){
+				SceneManager.LoadScene ("Win");
+			}else{
+				SceneManager.LoadScene ("Lose");
+			}
+		}
+
 		//for teleporting
 
 		if (distance <= 0.6) {
@@ -84,6 +126,14 @@ public class dialogHolder : MonoBehaviour {
 				SceneManager.LoadScene ("Minigame3");
 
 			}
+
+			if (!dMan.dialogActive && Player.name == "Player" && NPC.name == "Normak" &&
+				theQM.questCompleted [3] == true && ProgressSave.skipper == 13) {
+				ProgressSave.skipper = 14;
+				SceneManager.LoadScene ("Minigame2");
+
+			}
+
 			if (!dMan.dialogActive && NPC.name == "Romil" && ProgressSave.skipper == 9 ||
 				!dMan.dialogActive && NPC.name == "Inga" && ProgressSave.skipper == 9 ||
 				!dMan.dialogActive && NPC.name == "heinrich" && ProgressSave.skipper == 9 ||
@@ -93,6 +143,7 @@ public class dialogHolder : MonoBehaviour {
 				SceneManager.LoadScene ("Minigame1");
 
 			}
+
 
 
 
@@ -140,7 +191,16 @@ public class dialogHolder : MonoBehaviour {
 						dMan.currentLine = 0;
 						dMan.ShowDialogue ();
 					
-					} else if (Player.name == "Player" && NPC.name == "Romil" && ProgressSave.skipper == 5){
+					} else if (Player.name == "Player" && NPC.name == "Normak" && ProgressSave.skipper == 12){
+
+						//custom dialog
+						//dMan.dialogLines = new string[3];
+						dMan.dialogLines = new string[]{"Näen, et oled kõik vajalikud ained läbinud","Sind ootab nüüd Teoreetilise informaatika eksam","Loodan, et oled valmistunud"};
+						dMan.currentLine = 0;
+						dMan.ShowDialogue ();
+						ProgressSave.skipper = 13;
+
+					}else if (Player.name == "Player" && NPC.name == "Romil" && ProgressSave.skipper == 5){
 
 						//theQM.quests [4].gameObject.SetActive (true);
 

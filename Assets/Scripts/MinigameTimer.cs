@@ -86,6 +86,8 @@ public class MinigameTimer : MonoBehaviour {
 
 
 	public void GameOver(string name){
+		ProgressSave.skipper = 11;
+		Debug.Log(ProgressSave.skipper);
 		SceneManager.LoadScene(name);
 	}
 

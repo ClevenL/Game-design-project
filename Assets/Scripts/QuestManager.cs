@@ -31,13 +31,4 @@ public class QuestManager : MonoBehaviour {
 		theDM.currentLine = 0;
 		theDM.ShowDialogue ();
 	}
-	public void ShowQuestText2(string questText, string questText2)
-	{
-		theDM.dialogLines = new string[2];
-		theDM.dialogLines [0] = questText;
-		theDM.dialogLines [1] = questText;
-
-		theDM.currentLine = 0;
-		theDM.ShowDialogue ();
-	}
 }
