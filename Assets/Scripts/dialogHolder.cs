@@ -73,6 +73,11 @@ public class dialogHolder : MonoBehaviour {
 						dMan.dialogLines = dialogueLines;
 						dMan.currentLine = 0;
 						dMan.ShowDialogue ();
+					
+					} else if (Player.name == "Player" && NPC.name == "heinrich"){
+						dMan.dialogLines = dialogueLines;
+						dMan.currentLine = 0;
+						dMan.ShowDialogue ();
 
 					} else if (theQM.questCompleted [1] == false && theQM.questCompleted [2] == false) {
 						theQM.ShowQuestText ("Mul ei ole sulle midagi öelda.");
