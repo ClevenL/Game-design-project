@@ -21,7 +21,12 @@ GitHub desktop
 Uku Põder, Cleven Lehispuu, Henri Vajak, Tanel Maasalu
 
 # Paigaldusjuhised
+Mängimiseks:
 Lae alla meie repositooriumist game.exe fail, ava see ning naudi.
+Arenduskeskkonna tööle saamiseks:
+1. Lae alla Unity 5.6
+2. Lae alla repositoorium
+3. Ava repositoorium Unity'ga
 
 # Viide litsentsile
 https://github.com/ClevenL/Game-design-project/blob/master/LICENSE.txt
