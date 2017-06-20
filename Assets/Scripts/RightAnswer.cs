@@ -70,6 +70,7 @@ public class RightAnswer : MonoBehaviour {
 	}
 	void LoadArena(){
 		ProgressSave.skipper++;
+		Debug.Log(ProgressSave.skipper);
 		SceneManager.LoadScene("Arena 1");
 	}
 }

@@ -25,28 +25,44 @@ public class dialogHolder : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		distance = Vector3.Distance(Player.transform.position, NPC.transform.position);
+
+		if (ProgressSave.skipper == 4){
+			Debug.Log(ProgressSave.skipper);
+			theQM.quests [3].gameObject.SetActive (true);
+			Debug.Log(RightAnswer.answer);
+			if(RightAnswer.answer){
+				theQM.ShowQuestText ("Tubli! Sa teenisid 25 EAP.");
+				ScoreScript.scoreValue += 25;
+				theQM.quests [3].gameObject.SetActive (false);
+				theQM.questCompleted [3] = true;
+				ProgressSave.questProgress [3] = true;
+				ProgressSave.skipper++;
+
+			}else{
+				theQM.ShowQuestText ("Sa ei vastanud õigesti ja kukkusid aine läbi.");
+				theQM.quests [3].gameObject.SetActive (false);
+				theQM.questCompleted [3] = true;
+				ProgressSave.questProgress [3] = true;
+				ProgressSave.skipper++;
+			}
+
+		}
+
+		//for teleporting
+
 		if (distance <= 0.6) {
 
 			if (!dMan.dialogActive && Player.name == "Player" && NPC.name == "Inga" &&
 				theQM.questCompleted [2] == true && ProgressSave.skipper == 2) {
 				ProgressSave.skipper = 3;
 				SceneManager.LoadScene ("Minigame4");
-
-			}
-
-			if (ProgressSave.skipper == 4){
-				theQM.quests [3].gameObject.SetActive (true);
-				Debug.Log(RightAnswer.answer);
-				if(RightAnswer.answer){
-					theQM.ShowQuestText ("Tubli! Sa teenisid 25 EAP.");
-					ScoreScript.scoreValue += 25;
-				}else{
-					theQM.ShowQuestText ("Sa ei vastanud õigesti ja kukkusid aine läbi.");
-				}
+				Debug.Log(ProgressSave.skipper);
 
 			}
 
 
+
+			//for talking
 
 			if (Input.GetKeyUp (KeyCode.E)) {
 				//dMan.ShowBox (dialogue);
