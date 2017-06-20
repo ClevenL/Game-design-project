@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Game.unity
     guid: cd4c5f16ac4b92442a786f9a826bf2b1
   - enabled: 1
+    path: Assets/Arena 1.unity
+    guid: a6765e60ce5010b4d81b805b5e0a662a
+  - enabled: 1
     path: Assets/Arena.unity
     guid: ede3400e4aa76c14f9585115bb3a19c2
   - enabled: 1
@@ -26,6 +29,3 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Minigame2.unity
     guid: 237b5827f771f834fa65c39b4442c7a6
-  - enabled: 1
-    path: Assets/Arena 1.unity
-    guid: 00000000000000000000000000000000
