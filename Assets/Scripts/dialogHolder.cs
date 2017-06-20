@@ -35,6 +35,7 @@ public class dialogHolder : MonoBehaviour {
 			}
 
 			if (ProgressSave.skipper == 4){
+				theQM.quests [3].gameObject.SetActive (true);
 				Debug.Log(RightAnswer.answer);
 				if(RightAnswer.answer){
 					theQM.ShowQuestText ("Tubli! Sa teenisid 25 EAP.");
@@ -42,7 +43,7 @@ public class dialogHolder : MonoBehaviour {
 				}else{
 					theQM.ShowQuestText ("Sa ei vastanud õigesti ja kukkusid aine läbi.");
 				}
-				theQM.quests [3].gameObject.SetActive (true);
+
 			}
 
 
