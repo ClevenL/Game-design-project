@@ -27,19 +27,39 @@ public class dialogHolder : MonoBehaviour {
 		distance = Vector3.Distance(Player.transform.position, NPC.transform.position);
 
 		if (ProgressSave.skipper == 4){
-			Debug.Log(ProgressSave.skipper);
 			theQM.quests [3].gameObject.SetActive (true);
 			Debug.Log(RightAnswer.answer);
 			if(RightAnswer.answer){
-				theQM.ShowQuestText ("Tubli! Sa teenisid 25 EAP.");
+				theQM.ShowQuestText ("Tubli! Sa teenisid 25 EAP. Järgmine väljakutse ootab sind Romilli kabinetis!");
 				ScoreScript.scoreValue += 25;
 				theQM.quests [3].gameObject.SetActive (false);
 				theQM.questCompleted [3] = true;
 				ProgressSave.questProgress [3] = true;
+				RightAnswer.answer = false;
 				ProgressSave.skipper++;
 
 			}else{
-				theQM.ShowQuestText ("Sa ei vastanud õigesti ja kukkusid aine läbi.");
+				theQM.ShowQuestText ("Sa ei vastanud õigesti ja kukkusid aine läbi. Järgmine väljakutse ootab sind Romilli kabinetis!");
+				theQM.quests [3].gameObject.SetActive (false);
+				theQM.questCompleted [3] = true;
+				ProgressSave.questProgress [3] = true;
+				ProgressSave.skipper++;
+			}
+		}
+
+			if (ProgressSave.skipper == 8){
+			theQM.quests [3].gameObject.SetActive (true);
+			if(RightAnswer.answer){
+				theQM.ShowQuestText ("Tubli! Sa teenisid 25 EAP. Sa oled valmis Peeter Normaku Teoreetiliseks informaatikaks!");
+				ScoreScript.scoreValue += 25;
+				theQM.quests [3].gameObject.SetActive (false);
+				theQM.questCompleted [3] = true;
+				ProgressSave.questProgress [3] = true;
+				RightAnswer.answer = false;
+				ProgressSave.skipper++;
+
+			}else{
+				theQM.ShowQuestText ("Sa ei vastanud õigesti ja kukkusid aine läbi. Loodetavasti oled valmis Peeter Normaku Teoreetiliseks informaatikaks!");
 				theQM.quests [3].gameObject.SetActive (false);
 				theQM.questCompleted [3] = true;
 				ProgressSave.questProgress [3] = true;
@@ -56,7 +76,21 @@ public class dialogHolder : MonoBehaviour {
 				theQM.questCompleted [2] == true && ProgressSave.skipper == 2) {
 				ProgressSave.skipper = 3;
 				SceneManager.LoadScene ("Minigame4");
-				Debug.Log(ProgressSave.skipper);
+
+			}
+			if (!dMan.dialogActive && Player.name == "Player" && NPC.name == "Romil" &&
+				theQM.questCompleted [3] == true && ProgressSave.skipper == 6) {
+				ProgressSave.skipper = 7;
+				SceneManager.LoadScene ("Minigame3");
+
+			}
+			if (!dMan.dialogActive && NPC.name == "Romil" && ProgressSave.skipper == 9 ||
+				!dMan.dialogActive && NPC.name == "Inga" && ProgressSave.skipper == 9 ||
+				!dMan.dialogActive && NPC.name == "heinrich" && ProgressSave.skipper == 9 ||
+				!dMan.dialogActive && NPC.name == "Normak" && ProgressSave.skipper == 9){
+
+				ProgressSave.skipper = 10;
+				SceneManager.LoadScene ("Minigame1");
 
 			}
 
@@ -106,6 +140,16 @@ public class dialogHolder : MonoBehaviour {
 						dMan.currentLine = 0;
 						dMan.ShowDialogue ();
 					
+					} else if (Player.name == "Player" && NPC.name == "Romil" && ProgressSave.skipper == 5){
+
+						//theQM.quests [4].gameObject.SetActive (true);
+
+						dMan.dialogLines = dialogueLines;
+						dMan.currentLine = 0;
+						dMan.ShowDialogue ();
+
+						ProgressSave.skipper = 6;
+						
 					} else if (Player.name == "Player" && NPC.name == "heinrich"){
 						dMan.dialogLines = dialogueLines;
 						dMan.currentLine = 0;

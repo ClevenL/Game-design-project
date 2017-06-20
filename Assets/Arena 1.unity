@@ -39917,9 +39917,9 @@ MonoBehaviour:
   dialogue: Text
   distance: 0
   dialogueLines:
-  - "Tere, v\xE4rske tudeng! Mina olen Romil"
-  - "V\xF5tan Sind vastu Tallinna \xDClikooli."
-  - "Mine otsi \xFClesse \xF5ppej\xF5ud Peeter Normak."
+  - Tervist! Mina olen Romil.
+  - Oled veebiprogrammeerimise eksamiks valmis?
+  - Vahet pole, siit see tuleb!
   NPC: {fileID: 1191086008}
   Player: {fileID: 154149029}
 --- !u!61 &1191086011
