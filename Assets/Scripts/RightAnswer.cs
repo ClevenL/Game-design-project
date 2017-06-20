@@ -9,7 +9,7 @@ public class RightAnswer : MonoBehaviour {
 	private bool inVastus2 = false;
 	private bool inVastus3 = false;
 
-	public bool answer = false;
+	public static bool answer = false;
 
 	public bool Vastus1Answer = false;
 	public bool Vastus2Answer = false;
@@ -62,12 +62,14 @@ public class RightAnswer : MonoBehaviour {
 				if(Vastus3Answer){
 					answer = true;
 				}
+
 				LoadArena();
 		    }
 		}
 
 	}
 	void LoadArena(){
+		ProgressSave.skipper++;
 		SceneManager.LoadScene("Arena 1");
 	}
 }

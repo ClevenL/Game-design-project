@@ -27,9 +27,22 @@ public class dialogHolder : MonoBehaviour {
 		distance = Vector3.Distance(Player.transform.position, NPC.transform.position);
 		if (distance <= 0.6) {
 
-			if (!dMan.dialogActive && Player.name == "Player" && NPC.name == "Normak" &&
+			if (!dMan.dialogActive && Player.name == "Player" && NPC.name == "Inga" &&
 				theQM.questCompleted [2] == true && ProgressSave.skipper == 2) {
-				SceneManager.LoadScene ("Minigame2");
+				ProgressSave.skipper = 3;
+				SceneManager.LoadScene ("Minigame4");
+
+			}
+
+			if (ProgressSave.skipper == 4){
+				Debug.Log(RightAnswer.answer);
+				if(RightAnswer.answer){
+					theQM.ShowQuestText ("Tubli! Sa teenisid 25 EAP.");
+					ScoreScript.scoreValue += 25;
+				}else{
+					theQM.ShowQuestText ("Sa ei vastanud õigesti ja kukkusid aine läbi.");
+				}
+				theQM.quests [3].gameObject.SetActive (true);
 			}
 
 
@@ -39,7 +52,7 @@ public class dialogHolder : MonoBehaviour {
 
 				if (!dMan.dialogActive) {
 					//Debug.Log ("siin1");
-					if (Player.name == "Player" && NPC.name == "Normak" && theQM.questCompleted [2] == false &&
+					if (Player.name == "Player" && NPC.name == "Inga" && theQM.questCompleted [2] == false &&
 					    theQM.questCompleted [0] == true) {
 
 
@@ -52,15 +65,15 @@ public class dialogHolder : MonoBehaviour {
 						//theQM.ShowQuestText (endText);
 						theQM.questCompleted [2] = true;
 						ProgressSave.questProgress [2] = true;
-						ScoreScript.scoreValue += 4;
+						//ScoreScript.scoreValue += 4;
 						theQM.quests [2].gameObject.SetActive (false);
-						ProgressSave.skipper = ProgressSave.skipper + 1;
+						ProgressSave.skipper = 2;
 
 
 
 
 
-					} else if (Player.name == "Player" && NPC.name == "Romil" && theQM.questCompleted [0] == false) {
+					} else if (Player.name == "Player" && NPC.name == "Normak" && theQM.questCompleted [0] == false) {
 						//theQM.quests [2].EndQuest ();
 						//theQM.ShowQuestText (endText);
 						qTrig.gameObject.SetActive (false);
@@ -68,7 +81,7 @@ public class dialogHolder : MonoBehaviour {
 						ProgressSave.questProgress [0] = true;
 						theQM.quests [0].gameObject.SetActive (false);
 						theQM.quests [2].gameObject.SetActive (true);
-						ScoreScript.scoreValue += 6;
+						//ScoreScript.scoreValue += 6;
 
 
 

@@ -21824,7 +21824,7 @@ GameObject:
   - component: {fileID: 602027320}
   - component: {fileID: 602027321}
   m_Layer: 5
-  m_Name: Quest 4
+  m_Name: Quest 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29127,6 +29127,7 @@ MonoBehaviour:
   - {fileID: 1775185774}
   - {fileID: 1962539769}
   - {fileID: 919546913}
+  - {fileID: 602027321}
   questCompleted: 
   theDM: {fileID: 297840409}
 --- !u!1 &836870230
@@ -32520,11 +32521,9 @@ MonoBehaviour:
   distance: 0
   dialogueLines:
   - "Tere tulemast Tallinna \xDClikooli, v\xE4rske tudeng! Minu nimi on Peeter Normak."
-  - "Esimesena ainena tuleb Sul l\xE4bida test teoreetilise informaatika p\xF5hit\xF5dedest.
-    Sellega sorteerime me v\xE4lja k\xF5ikide tudengite hulgast need. kes \xFClikooli
-    jaoks k\xF5lbulikud on."
-  - Kas oled valmis?
-  - "Mine ja otsi \xFClesse \xF5ppej\xF5ud Inga!"
+  - "Esimesena ainena tuleb Sul l\xE4bida programmeerimise alused."
+  - "Seda ainet annab \xF5ppej\xF5ud Inga."
+  - "Mine ja otsi ta \xFCles. Edu!"
   NPC: {fileID: 957634757}
   Player: {fileID: 154149029}
 --- !u!70 &957634763
@@ -57756,10 +57755,8 @@ MonoBehaviour:
   distance: 0
   dialogueLines:
   - Tere, noor tudeng! Minu nimi on Inga Petuhhov.
-  - "\xD5petan Sulle algoritme ja andmestruktuure."
-  - "Kui sa minu aines l\xE4bi tahad saada, pead ilusti kohal k\xE4ima ja t\xE4helepanelik
-    olema. Loodan, et oled eeskujulik tudeng."
-  - Mis on algoritm?
+  - "Loodan, et oled h\xE4sti programmeerimise aluse tundides t\xE4hele pannud..."
+  - "...sest n\xFC\xFCd algab eksam!"
   NPC: {fileID: 1741139961}
   Player: {fileID: 154149029}
 --- !u!58 &1741139963
@@ -58966,7 +58963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 0
   theQM: {fileID: 835657126}
-  startText: "Mine r\xE4\xE4gi Romiliga."
+  startText: Tutvusta end Peeter Normakule.
   endText: 
 --- !u!224 &1775185775
 RectTransform:
