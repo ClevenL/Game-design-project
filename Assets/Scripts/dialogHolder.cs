@@ -13,7 +13,7 @@ public class dialogHolder : MonoBehaviour {
 	public string[] dialogueLines;
 	public GameObject NPC;
 	public GameObject Player;
-	private int skipper = 1;
+	//private int skipper = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -28,7 +28,7 @@ public class dialogHolder : MonoBehaviour {
 		if (distance <= 0.6) {
 
 			if (!dMan.dialogActive && Player.name == "Player" && NPC.name == "Normak" &&
-				theQM.questCompleted [2] == true && skipper == 2) {
+				theQM.questCompleted [2] == true && ProgressSave.skipper == 2) {
 				SceneManager.LoadScene ("Minigame2");
 			}
 
@@ -51,9 +51,10 @@ public class dialogHolder : MonoBehaviour {
 						//theQM.quests [2].EndQuest ();
 						//theQM.ShowQuestText (endText);
 						theQM.questCompleted [2] = true;
+						ProgressSave.questProgress [2] = true;
 						ScoreScript.scoreValue += 4;
 						theQM.quests [2].gameObject.SetActive (false);
-						skipper = skipper + 1;
+						ProgressSave.skipper = ProgressSave.skipper + 1;
 
 
 
@@ -64,6 +65,7 @@ public class dialogHolder : MonoBehaviour {
 						//theQM.ShowQuestText (endText);
 						qTrig.gameObject.SetActive (false);
 						theQM.questCompleted [0] = true;
+						ProgressSave.questProgress [0] = true;
 						theQM.quests [0].gameObject.SetActive (false);
 						theQM.quests [2].gameObject.SetActive (true);
 						ScoreScript.scoreValue += 6;

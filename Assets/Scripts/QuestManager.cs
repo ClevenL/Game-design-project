@@ -11,7 +11,11 @@ public class QuestManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		questCompleted = new bool[quests.Length];
+		//questCompleted = new bool[quests.Length];
+		if(ProgressSave.questProgress == null){
+			ProgressSave.questProgress = new bool[quests.Length];
+		}
+		questCompleted = ProgressSave.questProgress;
 	}
 	
 	// Update is called once per frame
