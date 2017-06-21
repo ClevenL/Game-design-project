@@ -100,13 +100,16 @@ public class dialogHolder : MonoBehaviour {
 
 		if (ProgressSave.skipper == 16){
 
-			ProgressSave.skipper = 1;
-			ProgressSave.questProgress = null;
-			ScoreScript.scoreValue = 0;
 			if (ScoreScript.scoreValue >= 60){
 				SceneManager.LoadScene ("Win");
+				ProgressSave.skipper = 1;
+				ProgressSave.questProgress = null;
+				ScoreScript.scoreValue = 0;
 			}else{
 				SceneManager.LoadScene ("Lose");
+				ProgressSave.skipper = 1;
+				ProgressSave.questProgress = null;
+				ScoreScript.scoreValue = 0;
 			}
 		}
 
