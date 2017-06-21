@@ -22,7 +22,10 @@ Uku Põder, Cleven Lehispuu, Henri Vajak, Tanel Maasalu
 
 # Paigaldusjuhised
 Mängimiseks:
-Lae alla meie repositooriumist game.exe fail, ava see ning naudi.
+1. Lae alla repositooriumist Game.rar fail
+2. Paki see lahti
+3. Käivita mäng game.exe failist
+
 Arenduskeskkonna tööle saamiseks:
 1. Lae alla Unity 5.6
 2. Lae alla repositoorium
