@@ -469,7 +469,8 @@ MonoBehaviour:
   dialogue: Text
   distance: 0
   dialogueLines:
-  - Kas sa teadsid, et...?
+  - "Kas sa teadsid, et Turingi masin on mittedeterministlik, kui tal on igal sammul
+    v\xF5imalik valida l\xF5pmatu arvu \xFCleminetute vahel? V\xF5i midagi sellist..."
   NPC: {fileID: 16076464}
   Player: {fileID: 154149029}
 --- !u!58 &16076466
@@ -2204,8 +2205,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 57203765}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9499998, y: -0.010000229, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.958, y: -0.010000229, z: 0}
+  m_LocalScale: {x: 1.0166607, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 832581955}
   m_RootOrder: 6
@@ -28382,8 +28383,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 810514280}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4493894, y: 0, z: 0}
-  m_LocalScale: {x: 0.102316804, y: 1.1111112, z: 1}
+  m_LocalPosition: {x: -0.4481, y: 0, z: 0}
+  m_LocalScale: {x: 0.10488814, y: 1.1111112, z: 1}
   m_Children: []
   m_Father: {fileID: 43605502}
   m_RootOrder: 8
@@ -36016,7 +36017,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 22468505
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: dd1cfd90f36beca4d9f1d49cb5c40544, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -55330,7 +55331,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -652.4, y: 299}
+  m_AnchoredPosition: {x: -557, y: 254}
   m_SizeDelta: {x: 104, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1648119902
