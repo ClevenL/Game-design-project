@@ -1,6 +1,3 @@
-README.md fail peab sisaldama järgmist:
-
-
 ## Welcome to DTI!
 
 # Screenshot
